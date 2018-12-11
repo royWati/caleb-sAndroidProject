@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/login_background">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:fitsSystemWindows="true"
+        android:src="@mipmap/img_more"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:hint="Username"
+        android:textColorHint="#fff"
+        android:textSize="20dp"
+        android:drawableLeft="@mipmap/ed_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/ed_username"
+        android:textColor="#fff"
+        />
+
+    <EditText
+        android:textColor="#fff"
+        android:hint="Password"
+        android:layout_below="@+id/ed_username"
+        android:textColorHint="#fff"
+        android:textSize="20dp"
+        android:drawableLeft="@mipmap/ed_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/ed_password"
+        android:layout_marginTop="10pt"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_password"
+        android:layout_marginTop="30dp"
+        android:text="Get Started"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_background"
+        android:textColor="#fff"
+        android:id="@+id/btn_login"
+               />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create account"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="3dp"
+        android:id="@+id/txt_register"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_login"
+        android:text="Help"
+        android:layout_marginTop="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
