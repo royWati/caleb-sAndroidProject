@@ -30,7 +30,7 @@ public class table_users extends Controller {
             table_name+"("+
             col_id+" BIGINT AUTOINCREMENT,"+
             col_name+" VARCHAR(50),"+
-            col_phone+" BIGINT,"+
+            col_phone+" VARCHAR(50),"+
             col_gender+" VARCHAR(50),"+
             col_email+" VARCHAR(50),"+
             col_password+" VARCHAR(50))";

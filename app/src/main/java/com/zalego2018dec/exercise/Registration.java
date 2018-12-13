@@ -76,7 +76,7 @@ public class Registration extends AppCompatActivity {
                 person.setEmail(d.email);
                 person.setPassword(d.password);
                 person.setName(d.name);
-                person.setPhoneNumber(Long.parseLong(d.phoneNumber));
+                person.setPhoneNumber(d.phoneNumber);
 
                 table_users tb = new table_users(Registration.this);
                 tb.registerUser(person);
