@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+    android:background="@drawable/login_background"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:drawableLeft="@mipmap/ed_image"
+        android:hint="Enter your name"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:id="@+id/ed_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:drawableLeft="@mipmap/phone_white"
+        android:hint="Phone number"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:id="@+id/ed_phone"
+        android:inputType="number"
+        android:layout_below="@+id/ed_name"
+        android:layout_marginTop="5pt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:drawableLeft="@mipmap/email"
+        android:hint="Email Address"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:id="@+id/ed_email"
+        android:layout_below="@+id/ed_phone"
+        android:layout_marginTop="5pt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:drawableLeft="@mipmap/ed_lock"
+        android:hint="password"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:id="@+id/ed_password"
+        android:layout_below="@+id/ed_email"
+        android:layout_marginTop="5pt"/>
+
+    <LinearLayout
+        android:id="@+id/linear_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5pt"
+        android:layout_below="@+id/ed_password"
+        android:background="@drawable/edit_text_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginLeft="7pt"
+            android:text="Select Gender"
+            android:padding="5pt"
+            />
+
+        <RadioGroup
+            android:id="@+id/group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_male"
+                android:text="Male"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginRight="5pt"
+                android:layout_marginLeft="5pt"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_female"
+                android:text="Female"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginRight="5pt"
+                android:layout_marginLeft="5pt"/>
+
+        </RadioGroup>
+    </LinearLayout>
+  <LinearLayout
+      android:id="@+id/linear_two"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="7pt"
+      android:background="@drawable/edit_text_background"
+      android:layout_marginTop="5pt"
+      android:layout_below="@+id/linear_one"
+      android:orientation="vertical">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          android:textStyle="bold"
+          android:textColor="#fff"
+          android:layout_marginLeft="7pt"
+          android:text="Select Genre"
+          />
+
+      <CheckBox xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:backgroundTint="#fff"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="pop music"
+          android:textColor="#fff"
+          android:id="@+id/ch_pop"/>
+      <CheckBox xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:backgroundTint="#fff"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="hip hop"
+          android:textColor="#fff"
+          android:id="@+id/ch_hip_pop"/>
+
+      <CheckBox xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:backgroundTint="#fff"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Afro beats"
+          android:textColor="#fff"
+          android:id="@+id/ch_afro_beats"/>
+      <CheckBox xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:textColor="#fff"
+          android:backgroundTint="#fff"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="reggea"
+          android:id="@+id/ch_reggea"/>
+      <CheckBox xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:backgroundTint="#fff"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="house"
+          android:textColor="#fff"
+          android:id="@+id/ch_house"/>
+
+
+
+
+  </LinearLayout>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/btn_background"
+      android:layout_below="@+id/linear_two"
+      android:text="Register"
+
+      android:layout_marginTop="7pt"
+      android:textColor="#fff"
+      android:id="@+id/btn_registration"/>
+</RelativeLayout>
+</ScrollView>
