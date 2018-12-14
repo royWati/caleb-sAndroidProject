@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -15,6 +16,7 @@ public class Login extends AppCompatActivity {
 
     class xmlVariables{
         TextView registrer;
+        Button btn_login;
     }
 
 
@@ -31,6 +33,7 @@ public class Login extends AppCompatActivity {
 
         // link our TextView object with our xml TexTview element
         xml.registrer = findViewById(R.id.txt_register);
+        xml.btn_login = findViewById(R.id.btn_login);
 
         events();
     }
@@ -42,6 +45,14 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 activityNavigation();
+            }
+        });
+
+        xml.btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this,Dashboard.class);
+                startActivity(intent);
             }
         });
     }

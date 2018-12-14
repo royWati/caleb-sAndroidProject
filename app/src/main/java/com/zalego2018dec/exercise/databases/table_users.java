@@ -28,7 +28,7 @@ public class table_users extends Controller {
     // we run a query to create the table
     public static final String CREATE_TABLE="CREATE TABLE IF NOT EXISTS "+
             table_name+"("+
-            col_id+" BIGINT AUTOINCREMENT,"+
+            col_id+" BIGINT AUTO_INCREMENT,"+
             col_name+" VARCHAR(50),"+
             col_phone+" VARCHAR(50),"+
             col_gender+" VARCHAR(50),"+

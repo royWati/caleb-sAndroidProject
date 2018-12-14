@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/mi_profile"
+        android:title="Profile"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ed_image"/>
+    <item android:id="@+id/mi_logout"
+        android:title="Logout"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/logout"/>
+</menu>

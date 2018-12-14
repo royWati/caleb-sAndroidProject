@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="#40ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5pt">
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/grid_item_image"/>
+    <TextView
+        android:text="test"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/grid_item_image"
+        android:id="@+id/grid_item_text"
+        android:layout_marginTop="1pt"
+        android:layout_marginBottom="2pt"/>
+</LinearLayout>
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>
