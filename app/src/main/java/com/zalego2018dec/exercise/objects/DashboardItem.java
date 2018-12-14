@@ -17,6 +17,7 @@ public class DashboardItem {
         this.text = text;
     }
 
+
     public DashboardItem() {
     }
 
